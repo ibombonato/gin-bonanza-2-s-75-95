@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraglider à Venda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .specs {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .specs h2 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        .specs ul {
+            list-style-type: none;
+        }
+
+        .specs li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .specs li::before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div>
+            <h1>Paraglider à Venda</h1>
+            <p>Excelente estado, pronto para voar!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="gallery">
+            <img src="./images/bonanza-01.jpg" alt="Paraglider vista frontal">
+            <img src="./images/bonanza-02.jpg" alt="Paraglider em voo">
+            <img src="./images/bonanza-03.jpg" alt="Detalhes do equipamento">
+        </section>
+
+        <section class="specs">
+            <h2>Especificações</h2>
+            <ul>
+                <li>Marca: GIN</li>
+                <li>Modelo: Bonanza 2 - Tamanho S - 75kg à 95kg</li>
+                <li>Classificação: EN C</li>
+                <li>Estado de conservação: Excelente</li>
+                <li>Com laudo</li>
+                <li>Vela pouco voada, em excelente estado de conservação, 99% dos voos em rampa gramada. Grande maioria em Andradas</li>
+            </ul>
+        </section>
+
+        <div class="contact">
+            <h2>Interessado?</h2>
+            <p>Valor: R$ 9.000,00 - Somente venda</p>
+            <p>Entre em contato se precisar de mais informações.</p>
+            <p>Posso ver de entregar em mãos nas rampas de SP. Andradas, Atibaia, Serra Negra, etc...</p>
+            <br>
+            <a href="https://wa.me/11993709064" class="btn">Contato via WhatsApp</a>
+            <br><br>
+            <p>Email: [ibombonatosites@gmail.com]</p>
+            <p>Localização: Santo André/São Caetano - SP</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
